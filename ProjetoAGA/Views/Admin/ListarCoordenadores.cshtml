@@ -1,0 +1,34 @@
+﻿@{
+
+    ViewData["Title"] = "Coordenador";
+
+}
+
+<a role="button" class="btn btn-primary" asp-controller="Admin" asp-action="Index">Voltar</a>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Otto</td>
+
+            <td>
+
+                <a role="button" class="btn btn-success" style="padding: 5px 15px" asp-controller="Admin" asp-action="VerCoordenador">Ver</a>
+                <a role="button" class="btn btn-primary" style="padding: 5px 15px" asp-controller="Admin" asp-action="EditarCoordenador">Editar</a>
+                <a role="button" class="btn btn-danger" style="padding: 5px 15px" asp-controller="Admin" asp-action="RemoverCoordenador">Remover</a>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<a role="button" class="btn btn-primary" asp-controller="Admin" asp-action="CriarCoordenador">Cadastrar Coordenador</a>
