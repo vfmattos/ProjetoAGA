@@ -29,3 +29,14 @@ C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\obj\Debug\net6.0\refint\Projet
 C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\obj\Debug\net6.0\ProjetoAGA.pdb
 C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\obj\Debug\net6.0\ProjetoAGA.genruntimeconfig.cache
 C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\obj\Debug\net6.0\ref\ProjetoAGA.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\Humanizer.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\vitor\source\repos\ProjetoAGA\ProjetoAGA\obj\Debug\net6.0\ProjetoAGA.csproj.CopyComplete

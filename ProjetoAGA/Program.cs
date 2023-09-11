@@ -1,3 +1,7 @@
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using ProjetoAGA.Data;
+
 namespace ProjetoAGA
 {
     public class Program
@@ -8,6 +12,13 @@ namespace ProjetoAGA
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContextPool<ProjetoAgaContext>(options =>
+                 options.UseMySql(mySqlConnection,
+                       ServerVersion.AutoDetect(mySqlConnection)));
+
+
 
             var app = builder.Build();
 
