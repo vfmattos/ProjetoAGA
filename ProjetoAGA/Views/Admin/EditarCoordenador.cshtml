@@ -1,4 +1,6 @@
-﻿@{
+﻿@model CoordenadorModel
+
+@{
 
     ViewData["Title"] = "Editar Coordenador";
 
@@ -6,50 +8,91 @@
 
 <a role="button" class="btn btn-primary" asp-controller="Admin" asp-action="ListarCoordenadores">Voltar</a>
 
+<br />
+<br />
 
-<form>
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-md-8">
+                <label for="Nome">Nome</label>
+                <input type="text" asp-for="@Model.Nome" class="form-control" placeholder="Nome">
+            </div>
+            <div class="col-md-4">
+                <label for="Data">Data de Nascimento</label>
+                <input type="date" asp-for="@Model.DatadeNascimento" class="form-control">
+            </div>
         </div>
-        <div class="form-group col-md-6">
-            <label for="inputPassword4">Senha</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-        </div>
-    </div>
-    <div class="form-group">
-        <label for="inputAddress">Endereço</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-    </div>
-    <div class="form-group">
-        <label for="inputAddress2">Endereço 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
-    </div>
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="inputCity">Cidade</label>
-            <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="form-group col-md-4">
-            <label for="inputEstado">Estado</label>
-            <select id="inputEstado" class="form-control">
-                <option selected>Escolher...</option>
-                <option>...</option>
+        <br>
+        <div class="form-group">
+            <label for="Sexo">Sexo</label>
+            <select asp-for="@Model.Sexo" style="width:25%;" class="form-select form-select-sm">
+                <option value="">Selecione</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outro">Outro</option>
             </select>
         </div>
-        <div class="form-group col-md-2">
-            <label for="inputCEP">CEP</label>
-            <input type="text" class="form-control" id="inputCEP">
+        <br />
+        <div class="row">
+            <div class="col-md-5">
+                <label for="rg">Rg</label>
+                <input type="text" asp-for="@Model.Rg" class="form-control" placeholder="RG">
+            </div>
+            <div class="col-md-5">
+                <label for="cpf">CPF</label>
+                <input type="text" asp-for="@Model.Cpf" class="form-control" placeholder="CPF">
+            </div>
         </div>
-    </div>
-    <div class="form-group">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-                Clique em mim
-            </label>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                <label for="Nacionalidade">Nacionalidade</label>
+                <input type="text" asp-for="@Model.Nacionalidade" class="form-control" placeholder="Nacionalidade">
+            </div>
+            <div class="col-md-4">
+                <label for="Cidade">Cidade</label>
+                <input type="text" asp-for="@Model.Cidade" class="form-control" placeholder="Cidade">
+            </div>
+            <div class="col-md-4">
+                <label for="Uf">UF</label>
+                <input type="text" asp-for="@Model.Uf" class="form-control" placeholder="Estado">
+            </div>
         </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Entrar</button>
-</form>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                <label for="Endereco">Endereço</label>
+                <input type="text" asp-for="@Model.Endereco" class="form-control" placeholder="Endereco">
+            </div>
+            <div class="col-md-2">
+                <label for="Numero">Numero</label>
+                <input type="text" asp-for="@Model.NumeroEndereco" class="form-control" placeholder="N°">
+            </div>
+            <div class="col-md-4">
+                <label for="Bairro">Bairro</label>
+                <input type="text" asp-for="@Model.Bairro" class="form-control" placeholder="Bairro">
+            </div>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-4">
+                <label for="Email">Email</label>
+                <input type="email" asp-for="@Model.Email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-md-4">
+                <label for="Celular">Celular</label>
+                <input type="tel" asp-for="@Model.Celular" class="form-control" placeholder="Celular">
+            </div>
+        </div>
+
+        <input type="hidden" asp-for="@Model.Perfil" value="@ProjetoAGA.Enums.PerfilUsuario.Coordenador" />
+
+        <br />
+        <br />
+
+        <button type="submit" style="display:block; width: 100%" class="btn btn-success"><strong>EDITAR COORDENADOR</strong></button>
+    </form>
+</div>

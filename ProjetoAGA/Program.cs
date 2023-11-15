@@ -1,6 +1,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using ProjetoAGA.Data;
+using ProjetoAGA.Repositorio.Interfaces;
+using ProjetoAGA.Repositorio;
 
 namespace ProjetoAGA
 {
@@ -17,6 +19,8 @@ namespace ProjetoAGA
             builder.Services.AddDbContextPool<ProjetoAgaContext>(options =>
                  options.UseMySql(mySqlConnection,
                        ServerVersion.AutoDetect(mySqlConnection)));
+
+            builder.Services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
 
 
 
